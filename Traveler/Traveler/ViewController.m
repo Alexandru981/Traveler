@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TRDataSource.h"
+#import "TRCountry.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TRCountry *country = [[TRCountry alloc] init];
+    country.identifier = @"FmKDZ2oJpT";
+    
+    [[TRDataSource sharedInstance] getCitiesForCountry:country];
 
 }
 

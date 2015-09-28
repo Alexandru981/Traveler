@@ -1,0 +1,19 @@
+//
+//  Traveler-Prefix.pch
+//  Traveler
+//
+//  Created by Alexandru Miculescu on 28/09/2015.
+//  Copyright © 2015 Alexandru Miculescu. All rights reserved.
+//
+
+#ifndef Traveler_Prefix_pch
+#define Traveler_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <MapKit/MapKit.h>
+
+#import "TRGeneralMacros.h"
+
+#endif /* Traveler_Prefix_pch */
