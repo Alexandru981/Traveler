@@ -60,4 +60,24 @@
     self.cities = mutableCities;
 }
 
+#pragma mark - System
+
+- (NSString*)description
+{
+    return [NSString stringWithFormat:@"<TRCountry: name = %@>", self.name];
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if ([object isKindOfClass:[TRCountry class]])
+    {
+        TRCountry* otherCountry = (TRCountry*)object;
+        
+        return [self.identifier isEqualToString:otherCountry.identifier];
+    }
+    
+    return NO;
+}
+
+
 @end

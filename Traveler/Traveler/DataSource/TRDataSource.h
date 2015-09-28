@@ -8,12 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^TRDataSourceSuccessBlockArray)(NSArray*);
+typedef void (^TRDataSourceFailBlock)(NSError*);
+
 @class TRCountry;
 
 @interface TRDataSource : NSObject
 
 + (instancetype)sharedInstance;
 
-- (void)getCitiesForCountry:(TRCountry *)country;
+/*
+ *-------------------------------------COUNTRIES--------------------------------------------------
+ */
+- (void)getAllCountriesSuccessBlock:(TRDataSourceSuccessBlockArray)success
+                          failBlock:(TRDataSourceFailBlock)fail;
+
+/*
+ *-------------------------------------COUNTRIES--------------------------------------------------
+ */
+- (void)getAllCountriesSuccess:(TRDataSourceSuccessBlockArray)success;
 
 @end

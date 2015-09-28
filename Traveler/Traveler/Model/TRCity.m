@@ -29,6 +29,8 @@
     return self;
 }
 
+#pragma mark - System
+
 - (NSString*)description
 {
     return [NSString stringWithFormat:@"<TRCity: name = %@>", self.name];

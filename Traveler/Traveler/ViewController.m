@@ -20,11 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    TRCountry *country = [[TRCountry alloc] init];
-    country.identifier = @"FmKDZ2oJpT";
+    [[TRDataSource sharedInstance] getAllCountriesSuccessBlock:^(NSArray *countries){
+        
+        
     
-    [[TRDataSource sharedInstance] getCitiesForCountry:country];
-
+    } failBlock:nil];
 }
 
 - (void)didReceiveMemoryWarning {

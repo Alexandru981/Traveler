@@ -48,9 +48,20 @@
     return _cities;
 }
 
+- (NSArray*)countries
+{
+    if (!_countries)
+    {
+        _countries = [NSArray array];
+    }
+    
+    return _countries;
+}
+
 #pragma mark - Get Countries
 
-- (void)getAllCountries
+- (void)getAllCountriesSuccessBlock:(TRDataSourceSuccessBlockArray)success
+                          failBlock:(TRDataSourceFailBlock)fail
 {
     PFQuery *query = [PFQuery queryWithClassName:kPF_CLASS_COUNTRY];
     
@@ -77,7 +88,12 @@
                 [mutableCountries addObject:country];
             }
             
-            self.countries = mutableCountries;
+            strongSelf.countries = mutableCountries;
+            
+            dispatch_async(tr_dispatch_main_queue, ^{
+                
+                success(strongSelf.countries);
+            });
         }
         
     }];
