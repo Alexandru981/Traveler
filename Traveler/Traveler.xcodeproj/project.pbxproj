@@ -33,6 +33,7 @@
 		FA564F1A1BB9B37000553868 /* TRDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA564F191BB9B37000553868 /* TRDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		FABBFA661BB9C559006E9F98 /* TRCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBFA651BB9C559006E9F98 /* TRCountry.m */; settings = {ASSET_TAGS = (); }; };
 		FABBFA691BB9C5F7006E9F98 /* TRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBFA681BB9C5F7006E9F98 /* TRCity.m */; settings = {ASSET_TAGS = (); }; };
+		FAD1FF1F1BBC405A006F21DD /* TRSelecableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		FABBFA681BB9C5F7006E9F98 /* TRCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRCity.m; path = Model/TRCity.m; sourceTree = "<group>"; };
 		FABBFA6B1BB9C7A1006E9F98 /* TRParseMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRParseMacros.h; path = Model/TRParseMacros.h; sourceTree = "<group>"; };
 		FABBFA6C1BB9C7E5006E9F98 /* TRModelMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRModelMacros.h; path = Model/TRModelMacros.h; sourceTree = "<group>"; };
+		FAD1FF1D1BBC405A006F21DD /* TRSelecableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRSelecableView.h; path = CustomUI/SelectableView/TRSelecableView.h; sourceTree = "<group>"; };
+		FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRSelecableView.m; path = CustomUI/SelectableView/TRSelecableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 		FA03A3741BB4257B00779C1C /* Traveler */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1FF1C1BBC401F006F21DD /* CustomUI */,
 				FA564F1E1BB9B4E900553868 /* Model */,
 				FA564F171BB9B31E00553868 /* DataSource */,
 				FA03A3DF1BB497DF00779C1C /* Frameworks */,
@@ -252,6 +256,23 @@
 				FABBFA681BB9C5F7006E9F98 /* TRCity.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FAD1FF1C1BBC401F006F21DD /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1FF201BBC405E006F21DD /* SelectableView */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		FAD1FF201BBC405E006F21DD /* SelectableView */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1FF1D1BBC405A006F21DD /* TRSelecableView.h */,
+				FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */,
+			);
+			name = SelectableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +411,7 @@
 				FABBFA691BB9C5F7006E9F98 /* TRCity.m in Sources */,
 				FA03A3831BB4257B00779C1C /* Traveler.xcdatamodeld in Sources */,
 				FA564F1A1BB9B37000553868 /* TRDataSource.m in Sources */,
+				FAD1FF1F1BBC405A006F21DD /* TRSelecableView.m in Sources */,
 				FA03A3771BB4257B00779C1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
