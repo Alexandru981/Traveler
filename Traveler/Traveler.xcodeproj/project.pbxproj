@@ -30,6 +30,7 @@
 		FA03A3DA1BB4977C00779C1C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */; };
 		FA03A3DC1BB4979700779C1C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DB1BB4979700779C1C /* Accounts.framework */; };
 		FA03A3DE1BB4979D00779C1C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DD1BB4979D00779C1C /* Social.framework */; };
+		FAD1FF1F1BBC405A006F21DD /* TRSelecableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA03A3DB1BB4979700779C1C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FA03A3DD1BB4979D00779C1C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FAD1FF1D1BBC405A006F21DD /* TRSelecableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRSelecableView.h; path = CustomUI/SelectableView/TRSelecableView.h; sourceTree = "<group>"; };
+		FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRSelecableView.m; path = CustomUI/SelectableView/TRSelecableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,9 @@
 		FA03A3741BB4257B00779C1C /* Traveler */ = {
 			isa = PBXGroup;
 			children = (
+				FAD1FF1C1BBC401F006F21DD /* CustomUI */,
+				FA564F1E1BB9B4E900553868 /* Model */,
+				FA564F171BB9B31E00553868 /* DataSource */,
 				FA03A3DF1BB497DF00779C1C /* Frameworks */,
 				FA03A3C11BB496CA00779C1C /* ExternalFrameworks */,
 				FA03A3781BB4257B00779C1C /* AppDelegate.h */,
@@ -213,6 +219,37 @@
 				FA03A3C61BB4970400779C1C /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA564F171BB9B31E00553868 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		FA564F1E1BB9B4E900553868 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FAD1FF1C1BBC401F006F21DD /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1FF201BBC405E006F21DD /* SelectableView */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		FAD1FF201BBC405E006F21DD /* SelectableView */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1FF1D1BBC405A006F21DD /* TRSelecableView.h */,
+				FAD1FF1E1BBC405A006F21DD /* TRSelecableView.m */,
+			);
+			name = SelectableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +385,7 @@
 				FA03A37D1BB4257B00779C1C /* ViewController.m in Sources */,
 				FA03A37A1BB4257B00779C1C /* AppDelegate.m in Sources */,
 				FA03A3831BB4257B00779C1C /* Traveler.xcdatamodeld in Sources */,
+				FAD1FF1F1BBC405A006F21DD /* TRSelecableView.m in Sources */,
 				FA03A3771BB4257B00779C1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
