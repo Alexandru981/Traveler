@@ -24,8 +24,10 @@ typedef void (^TRDataSourceFailBlock)(NSError*);
                           failBlock:(TRDataSourceFailBlock)fail;
 
 /*
- *-------------------------------------COUNTRIES--------------------------------------------------
+ *---------------------------------------CITIES---------------------------------------------------
  */
-- (void)getAllCountriesSuccess:(TRDataSourceSuccessBlockArray)success;
+- (void)getCitiesForCountry:(TRCountry *)country
+               successBlock:(TRDataSourceSuccessBlockArray)success
+                  failBlock:(TRDataSourceFailBlock)fail;
 
 @end
