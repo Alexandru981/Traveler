@@ -73,7 +73,7 @@
         
         if (error)
         {
-            //TODO Handle error
+            fail(error);
         }
         else
         {
@@ -102,6 +102,8 @@
 #pragma mark - Get Cities
 
 - (void)getCitiesForCountry:(TRCountry *)country
+               successBlock:(TRDataSourceSuccessBlockArray)success
+                  failBlock:(TRDataSourceFailBlock)fail
 {
     PFObject *pfCountry = [PFObject objectWithoutDataWithClassName:kPF_CLASS_COUNTRY objectId:country.identifier];
     
@@ -116,7 +118,7 @@
         
         if (error)
         {
-            //TODO Fail With Error
+            fail(error);
         }
         else
         {
@@ -134,6 +136,11 @@
             }
             
             strongSelf.cities = mutableCities;
+            
+            dispatch_async(tr_dispatch_main_queue, ^{
+                
+                success (self.cities);
+            });
             
         }
         
