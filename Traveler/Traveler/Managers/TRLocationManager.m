@@ -11,6 +11,7 @@
 @interface TRLocationManager () <CLLocationManagerDelegate>
 
 @property(nonatomic, strong) CLLocationManager *locationManager;
+@property(nonatomic, strong, readwrite) CLLocation *currentLocation;
 
 @end
 
@@ -24,6 +25,9 @@
     
     if (self)
     {
+
+        
+        //To check if the user accepted the location sharing if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized) {}
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
@@ -44,12 +48,19 @@
 {
     static TRLocationManager *sharedInstance;
     
-    dispatch_once_t *dispatchToken;
-    dispatch_once(dispatchToken, ^{
+    dispatch_once_t dispatchToken;
+    dispatch_once(&dispatchToken, ^{
         sharedInstance = [[TRLocationManager alloc] init];
     });
     
     return sharedInstance;
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    self.currentLocation = [locations lastObject];
 }
 
 @end

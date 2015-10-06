@@ -22,6 +22,7 @@
     [Parse setApplicationId:@"B3TvpgQT1s30u3SMFawTMn4nS6QXPZR2d3UOLfXa"
                   clientKey:@"XFxroD9vii7gkJYix2MMgNsz94Uk7V4U7Gehq6vJ"];
     
+    [TRLocationManager sharedInstance];
     
     return YES;
 }

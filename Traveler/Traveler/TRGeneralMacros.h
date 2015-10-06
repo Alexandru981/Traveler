@@ -9,7 +9,16 @@
 #ifndef TRGeneralMacros_h
 #define TRGeneralMacros_h
 
+
+/*
+ ******************************************* UTIL MACROS ***************************************************
+ */
 #define tr_dispatch_main_queue          dispatch_get_main_queue()
 #define tr_dispatch_default_queue       dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+/*
+ ********************************************* MANAGERS ****************************************************
+ */
+#import "TRLocationManager.h"
 
 #endif /* TRGeneralMacros_h */
