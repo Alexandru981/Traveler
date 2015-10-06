@@ -30,6 +30,7 @@
 		FA03A3DA1BB4977C00779C1C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */; };
 		FA03A3DC1BB4979700779C1C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DB1BB4979700779C1C /* Accounts.framework */; };
 		FA03A3DE1BB4979D00779C1C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DD1BB4979D00779C1C /* Social.framework */; };
+		FA0F97821BC475D2006F9099 /* TRLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F97811BC475D2006F9099 /* TRLocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		FA564F1A1BB9B37000553868 /* TRDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA564F191BB9B37000553868 /* TRDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		FABBFA661BB9C559006E9F98 /* TRCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBFA651BB9C559006E9F98 /* TRCountry.m */; settings = {ASSET_TAGS = (); }; };
 		FABBFA691BB9C5F7006E9F98 /* TRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBFA681BB9C5F7006E9F98 /* TRCity.m */; settings = {ASSET_TAGS = (); }; };
@@ -85,6 +86,8 @@
 		FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA03A3DB1BB4979700779C1C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FA03A3DD1BB4979D00779C1C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FA0F97801BC475D2006F9099 /* TRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRLocationManager.h; path = Managers/TRLocationManager.h; sourceTree = "<group>"; };
+		FA0F97811BC475D2006F9099 /* TRLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRLocationManager.m; path = Managers/TRLocationManager.m; sourceTree = "<group>"; };
 		FA564F181BB9B37000553868 /* TRDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRDataSource.h; path = DataSource/TRDataSource.h; sourceTree = "<group>"; };
 		FA564F191BB9B37000553868 /* TRDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRDataSource.m; path = DataSource/TRDataSource.m; sourceTree = "<group>"; };
 		FA564F331BB9BD7B00553868 /* TRGeneralMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGeneralMacros.h; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 		FA03A3741BB4257B00779C1C /* Traveler */ = {
 			isa = PBXGroup;
 			children = (
+				FA0F977F1BC4756F006F9099 /* Managers */,
 				FAD1FF1C1BBC401F006F21DD /* CustomUI */,
 				FA564F1E1BB9B4E900553868 /* Model */,
 				FA564F171BB9B31E00553868 /* DataSource */,
@@ -234,6 +238,15 @@
 				FA03A3C61BB4970400779C1C /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0F977F1BC4756F006F9099 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F97801BC475D2006F9099 /* TRLocationManager.h */,
+				FA0F97811BC475D2006F9099 /* TRLocationManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		FA564F171BB9B31E00553868 /* DataSource */ = {
@@ -408,6 +421,7 @@
 				FA03A37D1BB4257B00779C1C /* ViewController.m in Sources */,
 				FA03A37A1BB4257B00779C1C /* AppDelegate.m in Sources */,
 				FABBFA661BB9C559006E9F98 /* TRCountry.m in Sources */,
+				FA0F97821BC475D2006F9099 /* TRLocationManager.m in Sources */,
 				FABBFA691BB9C5F7006E9F98 /* TRCity.m in Sources */,
 				FA03A3831BB4257B00779C1C /* Traveler.xcdatamodeld in Sources */,
 				FA564F1A1BB9B37000553868 /* TRDataSource.m in Sources */,
