@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TRParalaxTableViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : TRParalaxTableViewController
 
 
 @end

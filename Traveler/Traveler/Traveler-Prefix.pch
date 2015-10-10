@@ -16,4 +16,10 @@
 
 #import "TRGeneralMacros.h"
 
+/*
+ ********************************** CATEGORIES ****************************************
+ */
+#import "UIView+Dimentions.h"
+
+
 #endif /* Traveler_Prefix_pch */
