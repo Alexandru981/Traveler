@@ -1,5 +1,5 @@
 //
-//  TRRequsetLocationsViewController.h
+//  TRMainViewController.h
 //  Traveler
 //
 //  Created by Alexandru Miculescu on 10/10/2015.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRRequsetLocationsViewController : TRMainViewController
+@interface TRMainNavigationController : UINavigationController
 
 @end

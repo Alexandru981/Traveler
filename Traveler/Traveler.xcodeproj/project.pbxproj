@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA03A3771BB4257B00779C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA03A3761BB4257B00779C1C /* main.m */; };
 		FA03A37A1BB4257B00779C1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA03A3791BB4257B00779C1C /* AppDelegate.m */; };
-		FA03A37D1BB4257B00779C1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA03A37C1BB4257B00779C1C /* ViewController.m */; };
-		FA03A3801BB4257B00779C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA03A37E1BB4257B00779C1C /* Main.storyboard */; };
 		FA03A3831BB4257B00779C1C /* Traveler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA03A3811BB4257B00779C1C /* Traveler.xcdatamodeld */; };
 		FA03A3851BB4257B00779C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA03A3841BB4257B00779C1C /* Assets.xcassets */; };
 		FA03A3881BB4257B00779C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA03A3861BB4257B00779C1C /* LaunchScreen.storyboard */; };
@@ -30,9 +28,16 @@
 		FA03A3DA1BB4977C00779C1C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */; };
 		FA03A3DC1BB4979700779C1C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DB1BB4979700779C1C /* Accounts.framework */; };
 		FA03A3DE1BB4979D00779C1C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03A3DD1BB4979D00779C1C /* Social.framework */; };
+		FA0F97821BC475D2006F9099 /* TRLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0F97811BC475D2006F9099 /* TRLocationManager.m */; settings = {ASSET_TAGS = (); }; };
 		FA564F1A1BB9B37000553868 /* TRDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA564F191BB9B37000553868 /* TRDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		FA6E419F1BC98014004C77A9 /* TRRequsetLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E419E1BC98014004C77A9 /* TRRequsetLocationsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FA6E41A31BC980AE004C77A9 /* TRSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E41A21BC980AE004C77A9 /* TRSplashScreen.m */; settings = {ASSET_TAGS = (); }; };
+		FA6E41A91BC983A5004C77A9 /* HitchHike.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA6E41A81BC983A5004C77A9 /* HitchHike.otf */; settings = {ASSET_TAGS = (); }; };
+		FA6E41AD1BC98E88004C77A9 /* TRMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E41AC1BC98E88004C77A9 /* TRMainNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		FA6E41B01BC9AB9A004C77A9 /* TRMainNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E41AF1BC9AB9A004C77A9 /* TRMainNavigationBar.m */; settings = {ASSET_TAGS = (); }; };
+		FA6E41B31BCA5619004C77A9 /* TRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6E41B21BCA5619004C77A9 /* TRMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FA6E41B71BCA5855004C77A9 /* backButtonImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6E41B51BCA5855004C77A9 /* backButtonImage@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FA6E41B81BCA5855004C77A9 /* backButtonImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6E41B61BCA5855004C77A9 /* backButtonImage@3x.png */; settings = {ASSET_TAGS = (); }; };
 		FAA07C301BC9131A00BC76B3 /* TRParalaxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA07C2F1BC9131A00BC76B3 /* TRParalaxTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FAA07C331BC9146C00BC76B3 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAA07C321BC9146C00BC76B3 /* testImage.jpg */; settings = {ASSET_TAGS = (); }; };
 		FAA07C3D1BC918C700BC76B3 /* UIView+Dimentions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA07C3C1BC918C700BC76B3 /* UIView+Dimentions.m */; settings = {ASSET_TAGS = (); }; };
@@ -63,9 +68,6 @@
 		FA03A3761BB4257B00779C1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA03A3781BB4257B00779C1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA03A3791BB4257B00779C1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA03A37B1BB4257B00779C1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA03A37C1BB4257B00779C1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FA03A37F1BB4257B00779C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA03A3821BB4257B00779C1C /* Traveler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Traveler.xcdatamodel; sourceTree = "<group>"; };
 		FA03A3841BB4257B00779C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA03A3871BB4257B00779C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		FA03A3D91BB4977C00779C1C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA03A3DB1BB4979700779C1C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FA03A3DD1BB4979D00779C1C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FA0F97801BC475D2006F9099 /* TRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRLocationManager.h; path = Managers/TRLocationManager.h; sourceTree = "<group>"; };
+		FA0F97811BC475D2006F9099 /* TRLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRLocationManager.m; path = Managers/TRLocationManager.m; sourceTree = "<group>"; };
 		FA564F181BB9B37000553868 /* TRDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRDataSource.h; path = DataSource/TRDataSource.h; sourceTree = "<group>"; };
 		FA564F191BB9B37000553868 /* TRDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRDataSource.m; path = DataSource/TRDataSource.m; sourceTree = "<group>"; };
 		FA564F331BB9BD7B00553868 /* TRGeneralMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGeneralMacros.h; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 		FA6E419E1BC98014004C77A9 /* TRRequsetLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRRequsetLocationsViewController.m; path = ViewControllers_Screens/RequsetLocationsScreen/TRRequsetLocationsViewController.m; sourceTree = "<group>"; };
 		FA6E41A11BC980AE004C77A9 /* TRSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRSplashScreen.h; path = ViewControllers_Screens/SplashScreen/TRSplashScreen.h; sourceTree = "<group>"; };
 		FA6E41A21BC980AE004C77A9 /* TRSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRSplashScreen.m; path = ViewControllers_Screens/SplashScreen/TRSplashScreen.m; sourceTree = "<group>"; };
+		FA6E41A81BC983A5004C77A9 /* HitchHike.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HitchHike.otf; path = Fonts/HitchHike.otf; sourceTree = "<group>"; };
+		FA6E41AB1BC98E88004C77A9 /* TRMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRMainNavigationController.h; path = ViewControllers_Screens/MainNavigationController/TRMainNavigationController.h; sourceTree = "<group>"; };
+		FA6E41AC1BC98E88004C77A9 /* TRMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMainNavigationController.m; path = ViewControllers_Screens/MainNavigationController/TRMainNavigationController.m; sourceTree = "<group>"; };
+		FA6E41AE1BC9AB9A004C77A9 /* TRMainNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRMainNavigationBar.h; path = ViewControllers_Screens/MainNavigationController/TRMainNavigationBar.h; sourceTree = "<group>"; };
+		FA6E41AF1BC9AB9A004C77A9 /* TRMainNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMainNavigationBar.m; path = ViewControllers_Screens/MainNavigationController/TRMainNavigationBar.m; sourceTree = "<group>"; };
+		FA6E41B11BCA5619004C77A9 /* TRMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRMainViewController.h; path = ViewControllers_Screens/MainNavigationController/TRMainViewController.h; sourceTree = "<group>"; };
+		FA6E41B21BCA5619004C77A9 /* TRMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRMainViewController.m; path = ViewControllers_Screens/MainNavigationController/TRMainViewController.m; sourceTree = "<group>"; };
+		FA6E41B51BCA5855004C77A9 /* backButtonImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonImage@2x.png"; path = "Icons/backButtonImage@2x.png"; sourceTree = "<group>"; };
+		FA6E41B61BCA5855004C77A9 /* backButtonImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonImage@3x.png"; path = "Icons/backButtonImage@3x.png"; sourceTree = "<group>"; };
 		FAA07C2E1BC9131A00BC76B3 /* TRParalaxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TRParalaxTableViewController.h; path = CustomUI/ParalaxTableView/TRParalaxTableViewController.h; sourceTree = "<group>"; };
 		FAA07C2F1BC9131A00BC76B3 /* TRParalaxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TRParalaxTableViewController.m; path = CustomUI/ParalaxTableView/TRParalaxTableViewController.m; sourceTree = "<group>"; };
 		FAA07C321BC9146C00BC76B3 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
@@ -184,9 +197,6 @@
 				FA03A3C11BB496CA00779C1C /* ExternalFrameworks */,
 				FA03A3781BB4257B00779C1C /* AppDelegate.h */,
 				FA03A3791BB4257B00779C1C /* AppDelegate.m */,
-				FA03A37B1BB4257B00779C1C /* ViewController.h */,
-				FA03A37C1BB4257B00779C1C /* ViewController.m */,
-				FA03A37E1BB4257B00779C1C /* Main.storyboard */,
 				FA03A3841BB4257B00779C1C /* Assets.xcassets */,
 				FA03A3861BB4257B00779C1C /* LaunchScreen.storyboard */,
 				FA03A3891BB4257B00779C1C /* Info.plist */,
@@ -199,6 +209,8 @@
 		FA03A3751BB4257B00779C1C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA6E41B41BCA582C004C77A9 /* Icons */,
+				FA6E41A71BC9839B004C77A9 /* Fonts */,
 				FAA07C321BC9146C00BC76B3 /* testImage.jpg */,
 				FA03A3761BB4257B00779C1C /* main.m */,
 				FA564F341BB9C3A600553868 /* Traveler-Prefix.pch */,
@@ -253,6 +265,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA0F977F1BC4756F006F9099 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F97801BC475D2006F9099 /* TRLocationManager.h */,
+				FA0F97811BC475D2006F9099 /* TRLocationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		FA564F171BB9B31E00553868 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +299,7 @@
 		FA6E419C1BC97DE8004C77A9 /* ViewControllers_Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FA6E41AA1BC98E44004C77A9 /* MainNavigationController */,
 				FA6E41A41BC980B2004C77A9 /* SplashScreen */,
 				FA6E41A01BC9804E004C77A9 /* RequestLocationScreen */,
 			);
@@ -300,6 +322,36 @@
 				FA6E41A21BC980AE004C77A9 /* TRSplashScreen.m */,
 			);
 			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		FA6E41A71BC9839B004C77A9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E41A81BC983A5004C77A9 /* HitchHike.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		FA6E41AA1BC98E44004C77A9 /* MainNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E41AB1BC98E88004C77A9 /* TRMainNavigationController.h */,
+				FA6E41AC1BC98E88004C77A9 /* TRMainNavigationController.m */,
+				FA6E41AE1BC9AB9A004C77A9 /* TRMainNavigationBar.h */,
+				FA6E41AF1BC9AB9A004C77A9 /* TRMainNavigationBar.m */,
+				FA6E41B11BCA5619004C77A9 /* TRMainViewController.h */,
+				FA6E41B21BCA5619004C77A9 /* TRMainViewController.m */,
+			);
+			name = MainNavigationController;
+			sourceTree = "<group>";
+		};
+		FA6E41B41BCA582C004C77A9 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E41B51BCA5855004C77A9 /* backButtonImage@2x.png */,
+				FA6E41B61BCA5855004C77A9 /* backButtonImage@3x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		FAA07C311BC9132200BC76B3 /* ParalaxTableView */ = {
@@ -444,8 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA03A3881BB4257B00779C1C /* LaunchScreen.storyboard in Resources */,
+				FA6E41B71BCA5855004C77A9 /* backButtonImage@2x.png in Resources */,
+				FA6E41B81BCA5855004C77A9 /* backButtonImage@3x.png in Resources */,
 				FA03A3851BB4257B00779C1C /* Assets.xcassets in Resources */,
-				FA03A3801BB4257B00779C1C /* Main.storyboard in Resources */,
+				FA6E41A91BC983A5004C77A9 /* HitchHike.otf in Resources */,
 				FAA07C331BC9146C00BC76B3 /* testImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,10 +525,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA03A37D1BB4257B00779C1C /* ViewController.m in Sources */,
 				FA6E41A31BC980AE004C77A9 /* TRSplashScreen.m in Sources */,
 				FA03A37A1BB4257B00779C1C /* AppDelegate.m in Sources */,
 				FABBFA661BB9C559006E9F98 /* TRCountry.m in Sources */,
+				FA6E41AD1BC98E88004C77A9 /* TRMainNavigationController.m in Sources */,
+				FA6E41B01BC9AB9A004C77A9 /* TRMainNavigationBar.m in Sources */,
+				FA0F97821BC475D2006F9099 /* TRLocationManager.m in Sources */,
+				FA6E41B31BCA5619004C77A9 /* TRMainViewController.m in Sources */,
 				FABBFA691BB9C5F7006E9F98 /* TRCity.m in Sources */,
 				FAA07C3D1BC918C700BC76B3 /* UIView+Dimentions.m in Sources */,
 				FA03A3831BB4257B00779C1C /* Traveler.xcdatamodeld in Sources */,
@@ -518,14 +575,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA03A37E1BB4257B00779C1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA03A37F1BB4257B00779C1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA03A3861BB4257B00779C1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

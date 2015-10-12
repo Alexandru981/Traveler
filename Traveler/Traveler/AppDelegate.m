@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "TRSplashScreen.h"
+#import "TRMainNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +24,15 @@
     [Parse setApplicationId:@"B3TvpgQT1s30u3SMFawTMn4nS6QXPZR2d3UOLfXa"
                   clientKey:@"XFxroD9vii7gkJYix2MMgNsz94Uk7V4U7Gehq6vJ"];
     
+    /*
+     ******* Start app showing splash screen ********
+     */
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    TRSplashScreen *splashScreen = [[TRSplashScreen alloc] init];
+    self.window.rootViewController = [[TRMainNavigationController alloc] initWithRootViewController:splashScreen];
+    [self.window setHidden:NO];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
