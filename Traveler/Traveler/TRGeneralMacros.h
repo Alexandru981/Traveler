@@ -30,7 +30,9 @@
 /*
  ********************************************* COLORS ******************************************************
  */
-#define kCOLOR_APPLICATION_GREEN        HEXCOLOR(0xFF319F00)
+#define kCOLOR_APPLICATION_BODY_GREEN           HEXCOLOR(0xFF006300)
+#define kCOLOR_APPLICATION_TITLE_GREEN          HEXCOLOR(0xFF005200)
+#define kCOLOR_WHITE                            HEXCOLOR(0xFFFFFFFF)
 
 #define HEXCOLOR(rgbValue) \
             [UIColor colorWithRed:((float)((rgbValue & 0x00FF0000) >> 16))/255.0 \

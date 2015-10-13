@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRSplashScreen : UIViewController
+@interface TRSplashScreen : TRMainViewController
 
 @end

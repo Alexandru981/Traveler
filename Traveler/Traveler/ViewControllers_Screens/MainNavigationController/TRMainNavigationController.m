@@ -15,6 +15,8 @@
 
 @implementation TRMainNavigationController
 
+#pragma mark - Init
+
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
     self = [super initWithNavigationBarClass:[TRMainNavigationBar class] toolbarClass:nil];
@@ -28,9 +30,18 @@
     return self;
 }
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+//    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,23 +55,14 @@
        didShowViewController:(UIViewController *)viewController
                     animated:(BOOL)animated
 {
-//   
+    
 }
 
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (void)navigationController:(UINavigationController *)navigationController
+      willShowViewController:(UIViewController *)viewController
+                    animated:(BOOL)animated
 {
-//    UIBarButtonItem *backBtn =[[UIBarButtonItem alloc]initWithTitle:@"Puta de maimuta" style:UIBarButtonItemStyleDone target:self action:@selector(test)];
-//    self.navigationItem.backBarButtonItem=backBt
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

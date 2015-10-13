@@ -18,7 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blackColor];
     self.title = @"Test title!";
 }
 
@@ -30,23 +29,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    [self setNeedsStatusBarAppearanceUpdate];
 }
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 
 /*
 #pragma mark - Navigation

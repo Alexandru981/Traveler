@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = kCOLOR_APPLICATION_GREEN;
+    self.view.backgroundColor = kCOLOR_APPLICATION_TITLE_GREEN;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,8 +36,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 #pragma mark - Setters / Getters
@@ -83,6 +81,11 @@
 {
     TRRequsetLocationsViewController *vc = [[TRRequsetLocationsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (BOOL)shouldShowNavigationBar
+{
+    return NO;
 }
 
 /*

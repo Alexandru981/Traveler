@@ -9,7 +9,7 @@
 #import "TRMainNavigationBar.h"
 
 #define kNAV_BAR_DEFAULT_TITLE_FONT                 TRTitleFontWithSize(30)
-#define kNAV_BAR_DEFAULT_BACKGROUND_COLOR           kCOLOR_APPLICATION_GREEN
+#define kNAV_BAR_DEFAULT_BACKGROUND_COLOR           kCOLOR_APPLICATION_TITLE_GREEN
 #define kNAV_BAR_DEFAULT_TITLE_COLOR                HEXCOLOR(0xFFFFFFFF)
 
 @interface TRMainNavigationBar ()
